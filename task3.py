@@ -34,7 +34,7 @@ def generate_unique_random_numbers(
     total_range = max_val - min_val + 1
     if count > total_range:
         raise ValueError(
-            f"Невозможно выбрать {count} уникальных чисел из диапазона {total_range}"
+            f"Невозможно выбрать {count} чисел " f"из диапазона {total_range}"
         )
     return random.sample(range(min_val, max_val + 1), count)
 
